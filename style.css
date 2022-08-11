@@ -6,7 +6,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
-  font-weight: 900;
+  
 }
 
 .main-area {
@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.card-area .top {
+.top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,19 +41,24 @@
   margin-bottom: 1rem;
 }
 
-.top .left p {
+.chart-container{
+  padding-bottom: 1.4rem ;
+  border-bottom: 1px solid hsl(27, 66%, 92%);
+}
+
+.top > .left > p {
   font-size: 0.8rem;
   color: #ffffffbd;
   margin-bottom: 3px;
 }
 
-.top .left h1 {
+.left > h1 {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.top .right img {
+.right > img {
   width: 50px;
 }
 
@@ -63,70 +68,69 @@
   border-radius: 1rem;
 }
 
-.main h1 {
+h1 {
   font-size: 1.5rem;
   margin-bottom: 01.5rem;
 }
 
-.main hr {
+hr {
   margin: 1rem;
   background: #d0c9c94a;
   height: 2px;
   border: 0;
 }
 
-.main .bottom-section {
+.bottom-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-top: 1rem;
 }
 
-.bottom-section .left p {
+.bottom-section > .left > p {
   color: #adadad;
   font-size: 0.8rem;
-  letter-spacing: 0.3px;
 }
 
-.bottom-section .left h2 {
+.left > h2 {
   font-size: 2rem;
 }
 
-.bottom-section .right {
+.right {
   margin-bottom: 5px;
 }
 
-.bottom-section .right p.percent {
+.percent {
   color: #000;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1rem;
   text-align: right;
 }
 
-.bottom-section .right p.last-month {
+.last-month {
   color: #adadad;
-  letter-spacing: 0.3px;
   font-size: 1rem;
 }
 
 @media only screen and (max-width: 500px) {
-  .card-area .top,
-  .card-area .bottom {
+ .top,
+ .bottom {
     padding: 1rem;
     border-radius: 0.7rem;
   }
 
-  .chart-box .column {
+  .column {
     width: 45px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .card-area .top,
-  .card-area .bottom {
+  .top,
+  .bottom {
     padding: 0.5rem;
     border-radius: 0.5rem;
   }
 
-  .chart-box .column {
+  .column {
     width: 4px;
   }
 }
